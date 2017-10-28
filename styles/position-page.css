@@ -30,8 +30,10 @@ ul {
 }
 nav li {
     display: inline-block;
-    border-right: 1.5px solid black;
-    padding-right: 7px;
+}
+nav li::after {
+    content: "|";
+    margin-left: 5px;
 }
 .box {
     border: 10px dotted green;
@@ -56,6 +58,6 @@ nav li {
     top: 450px;
 }
 body {
-    background: url("../images/outerspace_landscape.jpeg") no-repeat center center fixed;
+    background: url("../images/outerspace_landscape.jpeg") no-repeat;
     background-size: cover;
 }
